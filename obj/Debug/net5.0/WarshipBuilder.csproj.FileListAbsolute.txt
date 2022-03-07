@@ -1,0 +1,16 @@
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.exe
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.deps.json
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.runtimeconfig.json
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.runtimeconfig.dev.json
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.dll
+D:\AP\WarshipBuilder\bin\Debug\net5.0\ref\WarshipBuilder.dll
+D:\AP\WarshipBuilder\bin\Debug\net5.0\WarshipBuilder.pdb
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.csproj.AssemblyReference.cache
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.AssemblyInfoInputs.cache
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.AssemblyInfo.cs
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.csproj.CoreCompileInputs.cache
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.dll
+D:\AP\WarshipBuilder\obj\Debug\net5.0\ref\WarshipBuilder.dll
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.pdb
+D:\AP\WarshipBuilder\obj\Debug\net5.0\WarshipBuilder.genruntimeconfig.cache
