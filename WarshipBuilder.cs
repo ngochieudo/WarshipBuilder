@@ -80,7 +80,7 @@ namespace WarshipBuilder
             
             System.Console.Write("Input engine brand: ");
             string brand = Console.ReadLine();
-            System.Console.WriteLine("Input enigne horsepower: ");
+            System.Console.Write("Input enigne horsepower: ");
             int hp = Convert.ToInt32(Console.ReadLine());
 
             Engine e = new Engine(brand, hp);
