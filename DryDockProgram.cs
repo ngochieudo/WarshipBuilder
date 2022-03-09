@@ -13,6 +13,7 @@ namespace WarshipBuilder
         private TorpedoBuilder torpedo;
         private EngineBuilder engine;
         private List<Warship> warships;
+        Warship ws = new Warship();
         
         public DryDockProgram()
         {
@@ -45,7 +46,7 @@ namespace WarshipBuilder
         {
             System.Console.WriteLine(" Building ship ");
             
-            Warship ws = new Warship();
+            
             System.Console.Write("Enter ship name: ");
             string name = Console.ReadLine();
             hull.Build(ws);
