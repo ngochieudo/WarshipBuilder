@@ -133,7 +133,7 @@ namespace WarshipBuilder
                         case 3: EditHull(i); break;
                         case 4: EditTorpedo(i); break;
                         case 5: EditEngine(i); break;
-                        case 0: Run(); break;
+                        case 0: break;
                         
 
                     }
