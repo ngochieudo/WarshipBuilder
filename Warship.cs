@@ -7,11 +7,17 @@ namespace WarshipBuilder
 {
     public class Warship
     {
-        protected Hull shipHull;
-        protected Maingun shipMaingun;
-        protected Torpedo shipTorpedo;
-        protected Engine shipEngine;
+        private string name;
+        private Hull shipHull;
+        private Maingun shipMaingun;
+        private Torpedo shipTorpedo;
+        private Engine shipEngine;
 
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
         public Hull ShipHull
         {
             get { return shipHull; }
@@ -32,9 +38,10 @@ namespace WarshipBuilder
             get { return shipEngine; }
             set { shipEngine = value; }
         }
+        
         public override string ToString()
         {
-            return ShipHull + "\n" + ShipMaingun + "\n" + ShipTorpedo + "\n" + ShipEngine; 
+            return Name + "\n" + ShipHull + "\n" + ShipMaingun + "\n" + ShipTorpedo + "\n" + ShipEngine; 
         }
 
     }

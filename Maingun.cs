@@ -9,7 +9,8 @@ namespace WarshipBuilder
     {
         private int caliber;
         private double range; 
-        private int rate;
+        private int amount;
+        private string setup;
         public int Caliber
         {
             get { return caliber; }
@@ -20,21 +21,27 @@ namespace WarshipBuilder
             get { return range; }
             set { range = value; }
         }
-        public int Rate
+        public int Amount
         {
-            get { return rate; }
-            set { rate = value; }
+            get { return amount; }
+            set { amount = value; }
         }
-        public Maingun(int caliber, double range, int rate)
+        public string Setup
+        {
+            get { return setup; }
+            set { setup = value; }
+        }
+        public Maingun(int caliber, double range, int amount, string setup)
         {
             Caliber = caliber;
             Range = range;
-            Rate = rate; 
+            Amount = amount; 
+            Setup = setup;
 
         }
         public override string ToString()
         {
-            return "Caliber: " + Caliber + "mm, Range: " + Range + "km, Rate of fire: " + Rate + " shells/min";
+            return "Caliber: " + Caliber + "mm, Range: " + Range + "km, Amount of turret: " + Amount + " shells/min, Setup: " + Setup;
         }
     }
 }

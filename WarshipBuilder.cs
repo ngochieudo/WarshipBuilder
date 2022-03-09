@@ -38,10 +38,11 @@ namespace WarshipBuilder
             int caliber = Convert.ToInt32(Console.ReadLine());
             System.Console.Write("Input gun range: ");
             int range = Convert.ToInt32(Console.ReadLine());
-            System.Console.Write("Input rate of fire: ");
-            int rate = Convert.ToInt32(Console.ReadLine());
-
-            Maingun mg = new Maingun(caliber, range, rate);
+            System.Console.Write("Enter amount of turret: ");
+            int amount = Convert.ToInt32(Console.ReadLine());
+            System.Console.Write("Gun setup: ");
+            string setup = Console.ReadLine();
+            Maingun mg = new Maingun(caliber, range, amount, setup);
             ws.ShipMaingun = mg;
         }
     }
@@ -50,16 +51,25 @@ namespace WarshipBuilder
         public override void Build(Warship ws)
         {
             System.Console.WriteLine("-------Build torpedo for ship-------");
-
+            System.Console.WriteLine("Enter torpedo amount: ");
+            int amount = Convert.ToInt32(Console.ReadLine());
+            if(amount <= 0)
+            {
+                System.Console.WriteLine("No torpedo installed! ");
+            }
+            else
+            {
             System.Console.Write("Input caliber: ");
             int caliber = Convert.ToInt32(Console.ReadLine());
             System.Console.Write("Input torpedo speed: ");
             int speed = Convert.ToInt32(Console.ReadLine());
             System.Console.WriteLine("Input torpedo range: ");
             int range = Convert.ToInt32(Console.ReadLine());
-
-            Torpedo t = new Torpedo(caliber, speed, range);
+            Torpedo t = new Torpedo(amount, caliber, speed, range);
             ws.ShipTorpedo = t;
+            }
+            
+            
         }
     }
     public class EngineBuilder : WarshipBuilder
@@ -72,10 +82,8 @@ namespace WarshipBuilder
             string brand = Console.ReadLine();
             System.Console.WriteLine("Input enigne horsepower: ");
             int hp = Convert.ToInt32(Console.ReadLine());
-            System.Console.Write("Input capacity: ");
-            int capacity = Convert.ToInt32(Console.ReadLine());
 
-            Engine e = new Engine(brand, hp, capacity);
+            Engine e = new Engine(brand, hp);
             ws.ShipEngine = e;
         }
     }

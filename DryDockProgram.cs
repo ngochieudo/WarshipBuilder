@@ -1,3 +1,4 @@
+using System.Net.WebSockets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,15 +43,21 @@ namespace WarshipBuilder
         }
         public void BuildWarship()
         {
+            System.Console.WriteLine(" Building ship ");
+            
             Warship ws = new Warship();
-
+            System.Console.Write("Enter ship name: ");
+            string name = Console.ReadLine();
             hull.Build(ws);
             maingun.Build(ws);
             torpedo.Build(ws);
             engine.Build(ws);
-            
+
             warships.Add(ws);
-            System.Console.WriteLine("Add new ship successful!");
+            System.Console.WriteLine("Add successful!");
+            ws.ToString();
+            
+            
             
             
         }
@@ -58,12 +65,23 @@ namespace WarshipBuilder
         {
             foreach(Warship ws in warships)
             {
-
+                ws.ToString();
             }
         }
         public void DeleteShip()
         {
-            
+            System.Console.Write("Enter the ship name you want to delete: ");
+            string name = Console.ReadLine();
+            foreach(Warship ws in warships)
+            {
+                if(ws.Name.Contains(name)) 
+                {
+                warships.Remove(ws);
+                System.Console.WriteLine("Ship deleted! ");
+                }
+                else System.Console.WriteLine("No ship contains the name! ");
+
+            }
         }
     }
 }

@@ -27,16 +27,16 @@ namespace WarshipBuilder
             get { return capacity; }
             set { capacity = value; }
         }
-        public Engine(string brand, int hp, int capacity)
+        public Engine(string brand, int hp)
         {
             
             Brand = brand;
             Hp = hp;
-            Capacity = capacity;
+            
         }
         public override string ToString()
         {
-            return "Engine stats:  Brand: " + Brand + ", Horsepower: " + Hp + " hp, Capacity: " + Capacity;
+            return "Engine stats:  Brand: " + Brand + ", Horsepower: " + Hp + " hp";
         }
     }
 }
